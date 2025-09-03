@@ -8,6 +8,10 @@ const Login = () => {
   {
     setIsSignInForm(!isSignInForm);
   }
+  const handleButtonClick=()=>
+  {
+
+  }
   return (
     <div>
       <Header/>
@@ -30,7 +34,7 @@ const Login = () => {
       placeholder='Password'/>
 
       <button 
-      className='w-80 bg-red-600 mx-5 my-3 p-2'>
+      className='w-80 bg-red-600 mx-5 my-3 p-2' onClick={handleButtonClick}>
       {isSignInForm ? "Sign In" : "Sign Up" }
       </button>
       <p className='p-4 cursor-pointer' onClick={toggleSignInForm}>{isSignInForm ? "New to Netflix? Sign Up Now" : "Already registered? Sign In now" }</p>
