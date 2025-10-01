@@ -2,6 +2,9 @@ import React from 'react';
 import Header from './Header';
 
 const Browse = () => {
+  const getNowPlayingMovies = async() => {
+    const data= fetch("https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1", options);
+  }
   return (
     <div>
       <Header/>
